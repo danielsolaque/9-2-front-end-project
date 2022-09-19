@@ -18,6 +18,6 @@ AS A PERSON WHO IS INSPIRED BY WEATHER RELATED MUSIC TO WRITE MY NOVELS, I WOULD
 
 - As a user, I can type in an input box and search for the climate of the location where I live to get a list of music according to it (for example, if it is summer, I can listen to cheerful music from the Caribbean). Once I get this list I can select the music that best suits my preferences. 
 
-- As a user, if I try to submit an unknown location I should see a message "enter a valid city", on the other hand if I submit the form without having entered anything in the input box, I see a message on the screen telling me to enter a value to search for, so I cannot submit without entering a city.
+- As a user, if I try to submit an unknown location I should see a message # "enter a valid city", on the other hand if I submit the form without having entered anything in the input box, I see a message on the screen telling me to #enter a value to search for, so I cannot submit without entering a city.
 
 - As a user, I can click on the "About" link to take me to a new page where I see information about the developer.

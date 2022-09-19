@@ -6,10 +6,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+<!--<h1 onclick= "mySecondHtml();">About our superstar developer</h1> -->
+
     <title>Play Weather</title>
 </head>
 <body>
-    Play Weather
+    <header class="header">
+        <h1>Play Weather</h1>
+        <h4><em>The app with the most suitable music for you! </em></h4>
+        <form class="search-form" >
+            <label>
+                Pick a location 
+            </label>
+            <input type="text" id="location" name="location"> 
+            <input type="submit" value="Play the Weather!">
+        </form>
+    </header>
+
+    <div class="content">
+        <aside class="aside-container">
+            <div class="aside-container__weather">
+            </div>
+        </aside>
+        
+        <main class="main-container">
+            <div class="main-container__playlist">
+                <h4 class="init-msg">Pick a location then we show you the current weather and the best playlists to go with it.</h4>
+            </div>
+        </main>
+    </div>
+
+
+    <footer>
+        <section class="about-developer-section">
+            <h4 onclick= "mySecondHtml();" class="track_about">About our superstar developer</h4>
+        </section>
+        <div class="myPhoto">
+        <img src="fotoPersonal.jpg" alt="Daniel's personal foto" width="100px" class="myJpg" >
+        </div>
+    </footer>
 </body>
 <script src="main.js"></script>
 </html>
