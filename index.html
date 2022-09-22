@@ -7,46 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-<!--<h1 onclick= "mySecondHtml();">About our superstar developer</h1> -->
+
+    <!-- IMPORT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <title>Play Weather</title>
 </head>
 <body>
     <header class="header">
-        <h1>Play Weather</h1>
-        <h4><em>The app with the most suitable music for you! </em></h4>
-        <form class="search-form" >
-            <label>
-                Pick a location 
-            </label>
-            <input type="text" id="location" name="location"> 
-            <input type="submit" value="Play the Weather!">
-        </form>
+        <h1 class="mainTitle">Play Weather</h1>
+        
+        <div class="subtitle-container">
+            <h2 class="underMainTitle">The app with the most suitable music for you!</h2>
+            
+            <form class="search-form" >
+                <label class="location-label" for="location">
+                    Pick a location 
+                </label>
+                <input type="text" id="location" name="location"> 
+
+                <input type="submit" value="Play the Weather!" class="submit-location">
+            </form>
+        </div>
     </header>
 
-    <div class="content">
-        <aside class="aside-container">
-            <div class="aside-container__weather">
-            </div>
-        </aside>
-        
-        <main class="main-container">
-            <div class="main-container__playlist">
-                <h4 class="init-msg">Pick a location then we show you the current weather and the best playlists to go with it.</h4>
-            </div>
-        </main>
+    <div class="app-container">
+        <div class="content">
+            <aside class="aside-container hidden">
+                <div class="aside-container__weather">
+                </div>
+            </aside>
+            
+            <main class="main-container">
+                <div class="main-container__playlist">
+                    <h4 class="init-msg">Pick a location then we show you the current weather and the best playlists to go with it.</h4>
+                </div>
+            </main>
+        </div>
+
+
+        <footer class="footer">
+            <section class="about-developer-section">
+                <div class="myPhoto2">
+                    <img src="fotoPersonal.jpg" class="dev-image" alt="Daniel's personal foto" width="100px" class="myJpg2" >
+                </div>
+                <a href="./aboutDeveloper.html" class="track_about">About our superstar developer</a>
+
+            </section>
+        </footer>
     </div>
-
-
-    <footer>
-        <section class="about-developer-section">
-            <h4 onclick= "mySecondHtml();" class="track_about">About our superstar developer</h4>
-            <div class="myPhoto2">
-                <img src="fotoPersonal.jpg" alt="Daniel's personal foto" width="100px" class="myJpg2" >
-            </div>
-        </section>
-       
-    </footer>
 </body>
 <script src="main.js"></script>
 </html>

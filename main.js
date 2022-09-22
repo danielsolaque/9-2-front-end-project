@@ -89,11 +89,11 @@ const WTTR_IN_ENDPOINT = (city) => `https://wttr.in/${city}?format=j1`
 
 const HEROKUAPP_ENDPOINT = "https://pursuit-9-2-full-stack-project.herokuapp.com/api/quotes"
 
-// Listando los diferentes campos a from HEROKUAPP_ENDPOINT
+// Driving to my profile page
 function mySecondHtml () {
     location.href = "aboutDeveloper.html"
 }
-
+//**************************WORKING ON THE HEADER BLOCK*********************************** */
 //Lets put focus in our form
 const searchFormElement = document.querySelector(".search-form")
 
@@ -143,15 +143,19 @@ searchFormElement.addEventListener('submit', event => {
             
             //
             //in this point we have already getting : weatherType and the icon.
+            const asideContainer = document.querySelector('.aside-container')
+            asideContainer.classList.remove('hidden')
+
             const weatherContainer = document.querySelector('.aside-container__weather')
             weatherContainer.innerHTML = "" ///primero se accede a la referencia y luego se limpia.
 
 
             const weatherArticleElement = document.createElement('article') // <article> </article>
+            weatherArticleElement.classList.add('weather-article')
             /////que elementos vamos a crear dentro de este "article"?
             const weatherArticleHTML = 
             `   
-                <span class="weather-icon"> ${icon} </span>
+                <div class="weather-icon"> ${icon} </div>
                 <p> In ${searchInputValue} is </p>
                 <h3> ${weatherType} </h3>
                 <h3> ${weatherTemp} °F</h3>
@@ -172,7 +176,7 @@ searchFormElement.addEventListener('submit', event => {
             .then (musicData =>{
                 const topTracks = musicData.tracks.track.slice(0, 10) // OBTENER LAS PRIMERAS 10 CANCIONES
                 const playlistContainer = document.querySelector(".main-container__playlist")
-                playlistContainer.innerHTML = "<h4>Here are the songs you might like to listen to in this weather.</h4>"// CON ESTO NOS ASEGURAMOS RESETEAR EL CONTENEDOR PARA QUE SIEMPRE SE MUESTREN 10 CANCIONES.
+                playlistContainer.innerHTML = "<h4 class='main-container-title'>Here are the songs you might like to listen to in this weather:</h4>"// CON ESTO NOS ASEGURAMOS RESETEAR EL CONTENEDOR PARA QUE SIEMPRE SE MUESTREN 10 CANCIONES.
 
                 topTracks.forEach(track => {
                     const trackArticleElement = document.createElement('a') // <a> </a>
